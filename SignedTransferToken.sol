@@ -15,4 +15,8 @@ contract SignedTransferToken is ERC20Basic {
      * @dev Users can revoke approval by calling this method
      */
     function cancelTransfer(uint256 nonce) public returns (bool);
+    /**
+     * @dev Get last used transfer nonce
+     */
+    function getTransferNonce(address _address) public constant returns (uint256);
 }
