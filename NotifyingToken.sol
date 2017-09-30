@@ -10,6 +10,5 @@ import './ERC20Basic.sol';
  * @dev receiving contracts should implement TokenReceiver interface
  */
 contract NotifyingToken is ERC20Basic {
-    bool public notifyingToken;
     function transfer(address to, uint value, bytes data) public returns (bool);
 }
