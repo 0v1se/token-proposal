@@ -7,7 +7,7 @@ import './ERC20Basic.sol';
  * @dev Similar to ERC20, but user signs approval message off-chain
  */
 contract SignedTransferToken is ERC20Basic {
-    bool public signedTransfer;
+    bool public signedTransferToken;
     /**
      * @dev Other user (not owner of the tokens) can transfer tokens on behalf of the user if has ec signed message
      */
